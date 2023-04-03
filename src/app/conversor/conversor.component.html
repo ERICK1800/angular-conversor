@@ -4,7 +4,20 @@
             <div class="col-auto">
                 <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="row">
-                        <p>conversor works!</p>
+                        <div class="col">
+                            <input type="number" name="num" class="form-control" [(ngModel)]="num">
+                        </div>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button  type="submit" class="btn btn-outline-dark btn-lg" name="CMpM" (click)="CMpM()">CM para M</button>
+                        <button  type="submit" class="btn btn-outline-dark btn-lg" name="MpCM" (click)="MpCM()">M para CM</button>
+                        <button  type="submit" class="btn btn-outline-dark btn-lg" name="MpKM" (click)="MpKM()">M para KM</button>
+                        <button  type="submit" class="btn btn-outline-dark btn-lg" name="KMpM" (click)="KMpM()">KM para M</button>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="number" name="resup" class="form-control" readonly [value]="resup">
+                        </div>
                     </div>
                 </div>
             </div>
